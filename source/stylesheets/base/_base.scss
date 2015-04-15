@@ -1,0 +1,97 @@
+* { 
+	box-sizing: border-box;
+}
+
+html {
+	//don't forget to set the baseline px size in variables/type.scss accordingly
+}
+
+body {
+	font-family: $bodyFont;
+	color: black;
+}
+
+.wrapper {
+	& {
+		width: 720px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 32px;
+		text-align: center;
+		margin-top: 32px;
+		margin-bottom: 32px;
+		font-weight: bold;
+	}
+}
+
+.faqlist {
+	& {
+
+	}
+
+	&__item {
+		overflow: hidden;
+		margin-bottom: 32px;
+	}
+
+	&__itemheader {
+		font-size: 18px;
+		background-color: #f4f5f6;
+		float: left;
+		margin: 0;
+		width: 100%;
+		text-decoration: none;
+		color: black;
+
+		&:hover {
+			background-color: #dddddd;
+		}
+
+		&.active {
+			background-color: #dddddd;
+
+			&__min {
+				display: block;
+			}
+
+			&__plus {
+				display: none;
+			}	
+		}
+	}
+
+	&__min {
+		display: none;
+	}
+
+	&__plus {
+		display: block;
+	}
+
+	&__button {
+		background-color: #ed6658;
+		width: 43px;
+		height: 43px;
+		color: white;
+		margin: 0 10px 0 0;
+		float: left;
+		line-height: 43px;
+		text-align: center;
+	}
+
+	&__itemtitle {
+		line-height: 43px;
+	}
+
+	&__itemcontent {
+		font-size: 14px;
+		padding: 16px;
+		border: 1px solid #f4f5f6;
+		line-height: 20px;
+		margin: 0;
+		float: left;
+		display: none;
+	}
+}
