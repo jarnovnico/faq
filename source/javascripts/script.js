@@ -1,10 +1,9 @@
 jQuery(document).ready(function($){
 
 	function close_accordion_section() {
-        $('.faqlist .faqlist__itemheader').removeClass('active');
-        $('.faqlist .faqlist__itemcontent').slideUp(300).removeClass('open');
+        
     }
-    
+
     // function bla() {
     //     $('.faqlist .faqlist__plus').addClass('is-inactive');
     //     $('.faqlist .faqlist__min').addClass('is-active');
